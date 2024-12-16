@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Proceso de pago</h1>
+        <div class="decoration"></div>
+        <div class="input_container">
+            <label class="input_label" for="card-number-input">Número de tarjeta</label>
+            <input type="text" id="card-number-input" class="input_field" placeholder="Enter Card Number" maxlength="19">
+            <img id="card-icon" class="card-icon" src="" alt="Card Type Icon">
+            <div id="card-number-error" class="input_error hidden">Número de tarjeta no válido</div>
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="expiry-date-input">Fecha de vencimiento (MM/AA)</label>
+            <input type="text" id="expiry-date-input" class="input_field" placeholder="MM/YY" maxlength="5">
+            <div id="expiry-date-error" class="input_error hidden">Fecha de caducidad no válida</div>
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="cardholder-name-input">Nombre del titular de la tarjeta</label>
+            <input type="text" id="cardholder-name-input" class="input_field" placeholder="Your Full Name">
+            <div id="cardholder-name-error" class="input_error hidden">El nombre no puede contener números</div>
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="cvv-input">Código de seguridad (cvv)</label>
+            <input type="text" id="cvv-input" class="input_field" placeholder="CVV" maxlength="3">
+            <div id="cvv-error" class="input_error hidden">CVV no válido</div>
+        </div>
+        <button class="button" id="card-button">
+            <span>Realizar pago</span>
+        </button>
+        
+        <div class="footer">
+            <p>© 2024 Anes. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>
